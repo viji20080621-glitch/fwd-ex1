@@ -42,10 +42,11 @@ content = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Code</title>
+    <title>My First Page</title>
 </head>
 <body>
-    <button onclick="alert('Hello, world!')">Click Me</button>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML page.</p>
 </body>
 </html>
 """
