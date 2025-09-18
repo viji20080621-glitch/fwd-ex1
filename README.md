@@ -115,6 +115,7 @@ content = """
 
 ## OUTPUT:
 C:\fwd\ex1\fwd-ex1\fwd-ex1\image.1.png
+
 C:\fwd\ex1\fwd-ex1\fwd-ex1\image2.png
 
 ## RESULT:
