@@ -39,16 +39,80 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 ~~~
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
+~~~
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Page</title>
+  <meta charset="UTF-8">
+  <title>TCP Protocol Overview</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML page.</p>
+
+<table>
+  <caption>TCP Protocol Key Features</caption>
+  <tr>
+    <th>Feature</th>
+    <th>Explanation</th>
+  </tr>
+  <tr>
+    <td>Protocol</td>
+    <td>Transmission Control Protocol (TCP) — a connection-oriented protocol in the Transport Layer of the OSI model.</td>
+  </tr>
+  <tr>
+    <td>Connection Type</td>
+    <td>Connection-oriented; requires a handshake (SYN, SYN-ACK, ACK) before data transfer.</td>
+  </tr>
+  <tr>
+    <td>Reliability</td>
+    <td>Ensures reliable delivery of packets by using acknowledgments and retransmissions if needed.</td>
+  </tr>
+  <tr>
+    <td>Flow Control</td>
+    <td>Uses sliding window mechanism to prevent sender from overwhelming the receiver.</td>
+  </tr>
+  <tr>
+    <td>Error Checking</td>
+    <td>Uses checksums to verify data integrity.</td>
+  </tr>
+  <tr>
+    <td>Segmentation</td>
+    <td>Data from the application layer is split into segments for transmission.</td>
+  </tr>
+  <tr>
+    <td>Port Numbers</td>
+    <td>Uses source and destination port numbers to identify applications.</td>
+  </tr>
+  <tr>
+    <td>Use Cases</td>
+    <td>Web browsing (HTTP/HTTPS), Email (SMTP/IMAP/POP3), File transfers (FTP), etc.</td>
+  </tr>
+</table>
+
 </body>
 </html>
+
 """
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -63,7 +127,7 @@ print("my webserver is running...")
 httpd.serve_forever()
 ~~~
 ## OUTPUT:
-C:\fwd\ex1\fwd-ex1\screenshot1.png
+
 
 
 ## RESULT:
