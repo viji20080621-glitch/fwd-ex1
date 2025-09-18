@@ -127,8 +127,8 @@ print("my webserver is running...")
 httpd.serve_forever()
 ~~~
 ## OUTPUT:
-
-
+C:\fwd\ex1\fwd-ex1\Screenshot 2025-09-18 150308.png
+C:\fwd\ex1\fwd-ex1\Screenshot 2025-09-18 150323.png
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
