@@ -114,9 +114,11 @@ content = """
 ~~~
 
 ## OUTPUT:
-C:\fwd\ex1\fwd-ex1\fwd-ex1\image.1.png
+<img width="828" height="283" alt="image-1" src="https://github.com/user-attachments/assets/985f6e85-ff81-4458-a842-d54334aa7ea7" />
 
-C:\fwd\ex1\fwd-ex1\fwd-ex1\image2.png
+
+<img width="1261" height="614" alt="image" src="https://github.com/user-attachments/assets/9954d06a-2c4d-413a-8195-44527b757c1f" />
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
